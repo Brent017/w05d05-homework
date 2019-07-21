@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<ul id="nav">
+  		<li><a href="/cars">Home</a></li>
+ 	 	<li><a href="/cars/new">New</a></li>
+ 	 	<li><a href="/cars/<%=car._id%>/edit">Edit</a></li>
+	</ul>	
+	<h2>The <%=car.year%> <%=car.make%> <%=car.model%> was built with a <%=car.engine%> which produced <%=car.horsepower%> horsepower!</h2>
+	<img class="image" src="<%=car.img%>"> <br/>
+	<% if(car.convertible ===true) {%>
+	<h2>A convertible was also available.</h2>
+	<%} else {%>
+	<h2>A convertible was not available.</h2>
+	<%};%>
+</body>
+</html>

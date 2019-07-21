@@ -1,0 +1,72 @@
+h1 {
+	font-family: 'Fugaz One', cursive;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+}
+
+h2 {
+	font-family: 'Fugaz One', cursive;
+	text-align: center;
+	color: #f54242;
+	text-shadow: -1px -1px #000000, 1px -1px #000000, -1px 1px #000000, 1px 1px #000000;
+}
+
+img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 50%;
+	border-radius: 25px;
+	border: 3px solid white;
+}
+
+body {
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmyhkQWfd5R5QicOyZqKLLZMpX9bLJzkCoHVcsNBPGfN7U-Z2U") no-repeat center center fixed;
+	background-size: cover;
+}
+
+input {
+	font-family: 'Fugaz One', cursive;
+	color: #f54242;
+	font-size: 15px;
+	text-shadow: -1px -1px #000000, 1px -1px #000000, -1px 1px #000000, 1px 1px #000000;
+	border-radius: 25px;
+	border: 3px solid white;
+	background-color: #000;
+}
+
+a {
+	display: inline-block;
+	font-family: 'Fugaz One', cursive;
+	color: #000;
+	text-align: center;
+	text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+}
+
+.cars {
+	display: grid;
+	text-align: center;
+	max-width: 960;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px
+}
+
+.link {
+	list-style: none;
+	background-color: rgba(101, 95, 140, 0.5);
+	border-radius: 25px;
+	padding-bottom: 10px;
+}
+
+
+#nav {
+	float: left;
+	list-style-type: none;
+  	margin: 0;
+  	padding-left: 10px;
+}
+
+.enter {
+	background-color: #ebb734;
+}

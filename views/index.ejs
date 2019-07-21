@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<ul id="nav">
+  		<li><a href="/cars">Home</a></li>
+ 	 	<li><a href="/cars/new">New</a></li>
+	</ul>
+	<h1>Best Muscle Cars</h1>
+	<div class="form">
+	<ul class="cars">
+	<%cars.forEach(function(cars, id) {%>
+	<div class="link"><li><a href="/cars/<%=cars._id%>"><%=cars.year%> <%=cars.make%> <%=cars.model%></a></li>
+		<form method="POST" action="/cars/<%=cars._id%>?_method=DELETE">
+			<input class="button" type="submit" value="DELETE"/>
+		</form>
+	</div>
+	<%});%>
+	</ul>
+</body>
+</html>
